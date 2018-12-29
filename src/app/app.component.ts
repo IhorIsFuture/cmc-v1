@@ -1,10 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less']
 })
-export class AppComponent {
-  title = 'CMC111';
+export class AppComponent implements OnInit {
+  title = '';
+
+  ngOnInit() {
+    this.firstFunction();
+  }
+
+  public firstFunction() {
+    this.title = 'WE ARE FREE';
+  }
 }
