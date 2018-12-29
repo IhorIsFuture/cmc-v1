@@ -1,0 +1,33 @@
+{
+  "name": "backendcmc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./node_modules/nodemon/bin/nodemon.js ./index.ts",
+    "run": "nodemon --watch '**/*' -e ts,tsx --exec ts-node ./index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IhorIsFuture/backendcmc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IhorIsFuture/backendcmc/issues"
+  },
+  "homepage": "https://github.com/IhorIsFuture/backendcmc#readme",
+  "dependencies": {
+    "brain.js": "^1.6.1",
+    "koa": "^2.6.2",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.47",
+    "@types/koa-router": "^7.0.35",
+    "nodemon": "^1.18.9",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}
