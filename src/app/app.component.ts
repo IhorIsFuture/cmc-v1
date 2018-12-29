@@ -14,6 +14,6 @@ export class AppComponent implements OnInit {
   }
 
   public firstFunction() {
-    this.title = 'WE ARE FREE';
+    this.title = 'WE ARE FREE!';
   }
 }
