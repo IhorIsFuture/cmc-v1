@@ -7,13 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent implements OnInit {
-  title = '';
 
+  public output: any;
+
+  constructor() {
+
+  }
   ngOnInit() {
     this.firstFunction();
   }
 
   public firstFunction() {
-    this.title = 'WE ARE FREE!';
+    console.log(this.output);
   }
 }
