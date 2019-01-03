@@ -1,10 +1,8 @@
 import * as Koa from 'koa';
-import * as Router from 'koa-router';
 import { baseRouter } from './Router/baseRouter';
 import * as Http from 'http';
 
 const app = new Koa();
-const router = new Router();
 
 app.use(baseRouter.routes());
 
