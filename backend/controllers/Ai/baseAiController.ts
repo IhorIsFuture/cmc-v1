@@ -1,4 +1,3 @@
-import { BaseContext } from 'koa';
 import * as brain from 'brain.js';
 
 export class BaseAiController {
@@ -45,8 +44,4 @@ export class BaseAiController {
             result : result
         };
     }
-
-    // static getFirstNetwork() {
-    //     return undefined;
-    // }
 }

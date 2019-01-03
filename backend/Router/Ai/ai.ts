@@ -1,5 +1,5 @@
 import * as Router from 'koa-router';
-import { BaseAiController } from './../../controllers/Ai/baseAiController';
+import { BaseAiController } from '../../controllers/Ai/baseAiController';
 
 
 const Ai = new Router();
