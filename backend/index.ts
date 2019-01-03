@@ -1,17 +1,15 @@
 import * as Koa from 'koa';
 import * as Router from 'koa-router';
-import * as Brain from 'brain.js';
+import { baseRouter } from './Router/baseRouter';
+import * as Http from 'http';
 
 const app = new Koa();
 const router = new Router();
 
-router.get('/*', async (ctx) => {
-    ctx.body = 'Hello World!';
-});
+app.use(baseRouter.routes());
 
-app.use(router.routes());
 
-app.listen(3000);
+Http.createServer(app.callback()).listen(3000);
 
-console.log('Server running on port 3000');
+console.log('Server create on 3000');
 
