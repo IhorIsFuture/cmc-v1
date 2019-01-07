@@ -4,6 +4,7 @@ import { BaseAiController } from '../../controllers/Ai/baseAiController';
 
 const Ai = new Router();
 
+
 Ai.get('/', async (ctx) => {
     const result = await BaseAiController.getFirstNetwork();
 
@@ -11,6 +12,7 @@ Ai.get('/', async (ctx) => {
     ctx.body = result;
 
 });
+
 
 
 export { Ai };
