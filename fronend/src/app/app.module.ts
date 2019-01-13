@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { GallaryComponent } from './Components/gallary/gallary.component';
 import { ShopModule } from './Modules/shop/shop.module';
 import { HomePageComponent } from './Components/home-page/home-page.component';
+import { AboutUsComponent } from './Components/about-us/about-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GallaryComponent,
-    HomePageComponent
+    HomePageComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
