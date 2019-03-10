@@ -8,7 +8,7 @@ export class BaseAiController {
 
     static async getFirstNetwork() {
 
-        const readableStream = new Stream.Transform;
+        const readableStream: any = new Stream.Transform;
 
         const trainingData = [
             'Jane saw Doug.',
@@ -41,13 +41,13 @@ export class BaseAiController {
 
 
 
-        readableStream.sendobj.run1.pipe(lstm.run('Jane'));
-        readableStream.sendobj.run2.pipe(lstm.run('Doug'));
-        readableStream.sendobj.run3.pipe(lstm.run('Spot'));
-        readableStream.sendobj.run4.pipe(lstm.run('It'));
-        readableStream.sendobj.array.pipe(arrayw);
+        // readableStream.sendobj.run1.pipe(lstm.run('Jane'));
+        // readableStream.sendobj.run2.pipe(lstm.run('Doug'));
+        // readableStream.sendobj.run3.pipe(lstm.run('Spot'));
+        // readableStream.sendobj.run4.pipe(lstm.run('It'));
+        // readableStream.sendobj.array.pipe(arrayw);
 
-        console.log(readableStream.sendobj);
+        // console.log(readableStream.sendobj);
 
         return 'good';
     }
